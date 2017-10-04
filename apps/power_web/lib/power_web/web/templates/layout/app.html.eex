@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello PowerWeb!</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+  </head>
+
+  <body>
+    <div class="conntainer">
+      <div id="mapid"></div>
+    </div> <!-- /container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
